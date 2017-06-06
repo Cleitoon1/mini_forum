@@ -1,7 +1,7 @@
 from rest_framework import generics
 
-from forum.usuarios.models.permissao import Permissao
-from forum.usuarios.serializers.permissao import PermissaoSerializer
+from rest.forum.usuarios.models.permissao import Permissao
+from rest.forum.usuarios.serializers.permissao import PermissaoSerializer
 
 
 class PermissaoView(generics.ListCreateAPIView):

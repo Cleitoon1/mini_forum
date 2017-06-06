@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from forum.posts.models.resposta import Resposta
+from rest.forum.posts.models.resposta import Resposta
 
 
 class RespostaSerializer(serializers.ModelSerializer):

@@ -1,6 +1,6 @@
 from rest_framework import generics
 
-from forum.usuarios.models.user import User
+from rest.forum.usuarios.models.user import User
 
 
 class UserView(generics.ListCreateAPIView):

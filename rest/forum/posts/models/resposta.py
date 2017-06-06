@@ -2,13 +2,14 @@ from datetime import datetime
 
 from django.forms import models
 
-from forum.posts.models.post import Post
+from rest.forum.posts.models.post import Post
+from rest.forum.usuarios.models.user import User
 
 
 class Resposta(models.Model):
     texto = models.CharField(max_length=500, null=False)
     data_criacao = models.DateField(default=datetime.now())
-    autor = models.OneToOneField(Perfil, null=False)
+    autor = models.OneToOneField(User, null=False)
     post = models.ForeignKey(Post, related_name='post')
 
     class Meta:

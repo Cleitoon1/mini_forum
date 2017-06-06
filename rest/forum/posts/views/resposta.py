@@ -1,7 +1,7 @@
 from rest_framework import generics
 
-from forum.posts.models.resposta import Resposta
-from forum.posts.serializers.resposta import RespostaSerializer
+from rest.forum.posts.models.resposta import Resposta
+from rest.forum.posts.serializers.resposta import RespostaSerializer
 
 
 class RespostaView(generics.ListCreateAPIView):

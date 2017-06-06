@@ -1,7 +1,7 @@
 from rest_framework import generics
 
-from forum.posts.models.topico import Topico
-from forum.posts.serializers.post import PostSerializer
+from rest.forum.posts.models.topico import Topico
+from rest.forum.posts.serializers.post import PostSerializer
 
 
 class TopicoView(generics.ListCreateAPIView):

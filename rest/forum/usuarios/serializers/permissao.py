@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from forum.usuarios.models.permissao import Permissao
+from rest.forum.usuarios.models.permissao import Permissao
 
 
 class PermissaoSerializer(serializers.ModelSerializer):
